@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20211117 12:54:58.673" schemaversion="2" generator="Robot 4.1.2 (Python 2.7.18 on win32)">
+<suite source="D:\git_workspace\WebDemo\login_tests" id="s1" name="Login Tests">
+<suite source="D:\git_workspace\WebDemo\login_tests\gherkin_login.robot" id="s1-s1" name="Gherkin Login">
+<test id="s1-s1-t1" name="Valid Login">
+<kw name="Given browser is opened to login page">
+<kw name="Open Browser To Login Page" library="resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211117 12:54:59.523" level="INFO">Opening browser 'chrome' to base url 'http://localhost:7272/'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211117 12:55:11.882" html="true" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20211117 12:55:11.883" starttime="20211117 12:55:11.713"/>
+</kw>
+<msg timestamp="20211117 12:55:11.893" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=95.0.4638.69)
+</msg>
+<status status="FAIL" endtime="20211117 12:55:11.893" starttime="20211117 12:54:59.521"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" endtime="20211117 12:55:11.895" starttime="20211117 12:55:11.895"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" endtime="20211117 12:55:11.895" starttime="20211117 12:55:11.895"/>
+</kw>
+<kw name="Login Page Should Be Open" library="resource">
+<status status="NOT RUN" endtime="20211117 12:55:11.895" starttime="20211117 12:55:11.895"/>
+</kw>
+<status status="FAIL" endtime="20211117 12:55:11.897" starttime="20211117 12:54:59.519"/>
+</kw>
+<status status="FAIL" endtime="20211117 12:55:11.901" starttime="20211117 12:54:59.518"/>
+</kw>
+<kw sourcename="User &quot;${username}&quot; logs in with password &quot;${password}&quot;" name="When user &quot;demo&quot; logs in with password &quot;mode&quot;">
+<status status="NOT RUN" endtime="20211117 12:55:11.905" starttime="20211117 12:55:11.904"/>
+</kw>
+<kw name="Then welcome page should be open" library="resource">
+<status status="NOT RUN" endtime="20211117 12:55:11.905" starttime="20211117 12:55:11.905"/>
+</kw>
+<kw type="TEARDOWN" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20211117 12:55:14.490" starttime="20211117 12:55:11.906"/>
+</kw>
+<status status="FAIL" endtime="20211117 12:55:14.491" starttime="20211117 12:54:59.517">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=95.0.4638.69)
+</status>
+</test>
+<doc>A test suite with a single Gherkin style test.
+
+This test is functionally identical to the example in
+valid_login.robot file.</doc>
+<status status="FAIL" endtime="20211117 12:55:14.504" starttime="20211117 12:54:58.806"/>
+</suite>
+<suite source="D:\git_workspace\WebDemo\login_tests\invalid_login.robot" id="s1-s2" name="Invalid Login">
+<kw type="SETUP" name="Open Browser To Login Page" library="resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211117 12:55:14.530" level="INFO">Opening browser 'chrome' to base url 'http://localhost:7272/'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211117 12:55:25.888" html="true" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20211117 12:55:25.888" starttime="20211117 12:55:25.675"/>
+</kw>
+<msg timestamp="20211117 12:55:25.893" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=95.0.4638.69)
+</msg>
+<status status="FAIL" endtime="20211117 12:55:25.894" starttime="20211117 12:55:14.529"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" endtime="20211117 12:55:25.895" starttime="20211117 12:55:25.895"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" endtime="20211117 12:55:25.896" starttime="20211117 12:55:25.896"/>
+</kw>
+<kw name="Login Page Should Be Open" library="resource">
+<status status="NOT RUN" endtime="20211117 12:55:25.897" starttime="20211117 12:55:25.896"/>
+</kw>
+<status status="FAIL" endtime="20211117 12:55:25.898" starttime="20211117 12:55:14.528"/>
+</kw>
+<test id="s1-s2-t1" name="Invalid Username">
+<status status="FAIL" endtime="20211117 12:55:25.900" starttime="20211117 12:55:25.898">Parent suite setup failed:
+WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=95.0.4638.69)
+</status>
+</test>
+<test id="s1-s2-t2" name="Invalid Password">
+<status status="FAIL" endtime="20211117 12:55:25.905" starttime="20211117 12:55:25.904">Parent suite setup failed:
+WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=95.0.4638.69)
+</status>
+</test>
+<test id="s1-s2-t3" name="Invalid Username And Password">
+<status status="FAIL" endtime="20211117 12:55:25.920" starttime="20211117 12:55:25.918">Parent suite setup failed:
+WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=95.0.4638.69)
+</status>
+</test>
+<test id="s1-s2-t4" name="Empty Username">
+<status status="FAIL" endtime="20211117 12:55:25.935" starttime="20211117 12:55:25.924">Parent suite setup failed:
+WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=95.0.4638.69)
+</status>
+</test>
+<test id="s1-s2-t5" name="Empty Password">
+<status status="FAIL" endtime="20211117 12:55:25.957" starttime="20211117 12:55:25.943">Parent suite setup failed:
+WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=95.0.4638.69)
+</status>
+</test>
+<test id="s1-s2-t6" name="Empty Username And Password">
+<status status="FAIL" endtime="20211117 12:55:25.981" starttime="20211117 12:55:25.976">Parent suite setup failed:
+WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=95.0.4638.69)
+</status>
+</test>
+<kw type="TEARDOWN" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20211117 12:55:29.368" starttime="20211117 12:55:25.999"/>
+</kw>
+<doc>A test suite containing tests related to invalid login.
+
+These tests are data-driven by their nature. They use a single
+keyword, specified with Test Template setting, that is called
+with different arguments to cover different scenarios.
+
+This suite also demonstrates using setups and teardowns in
+different levels.</doc>
+<status status="FAIL" endtime="20211117 12:55:29.368" starttime="20211117 12:55:14.513">Suite setup failed:
+WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=95.0.4638.69)
+</status>
+</suite>
+<suite source="D:\git_workspace\WebDemo\login_tests\valid_login.robot" id="s1-s3" name="Valid Login">
+<test id="s1-s3-t1" name="Valid Login">
+<kw name="Open Browser To Login Page" library="resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211117 12:55:29.395" level="INFO">Opening browser 'chrome' to base url 'http://localhost:7272/'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211117 12:55:40.730" html="true" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20211117 12:55:40.731" starttime="20211117 12:55:40.514"/>
+</kw>
+<msg timestamp="20211117 12:55:40.734" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=95.0.4638.69)
+</msg>
+<status status="FAIL" endtime="20211117 12:55:40.734" starttime="20211117 12:55:29.392"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" endtime="20211117 12:55:40.736" starttime="20211117 12:55:40.735"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" endtime="20211117 12:55:40.736" starttime="20211117 12:55:40.736"/>
+</kw>
+<kw name="Login Page Should Be Open" library="resource">
+<status status="NOT RUN" endtime="20211117 12:55:40.736" starttime="20211117 12:55:40.736"/>
+</kw>
+<status status="FAIL" endtime="20211117 12:55:40.738" starttime="20211117 12:55:29.391"/>
+</kw>
+<kw name="Input Username" library="resource">
+<arg>demo</arg>
+<status status="NOT RUN" endtime="20211117 12:55:40.741" starttime="20211117 12:55:40.740"/>
+</kw>
+<kw name="Input Password" library="resource">
+<arg>mode</arg>
+<status status="NOT RUN" endtime="20211117 12:55:40.745" starttime="20211117 12:55:40.744"/>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<status status="NOT RUN" endtime="20211117 12:55:40.746" starttime="20211117 12:55:40.746"/>
+</kw>
+<kw name="Welcome Page Should Be Open" library="resource">
+<status status="NOT RUN" endtime="20211117 12:55:40.747" starttime="20211117 12:55:40.747"/>
+</kw>
+<kw type="TEARDOWN" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20211117 12:55:45.153" starttime="20211117 12:55:40.747"/>
+</kw>
+<status status="FAIL" endtime="20211117 12:55:45.154" starttime="20211117 12:55:29.386">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=95.0.4638.69)
+</status>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="FAIL" endtime="20211117 12:55:45.159" starttime="20211117 12:55:29.373"/>
+</suite>
+<status status="FAIL" endtime="20211117 12:55:45.198" starttime="20211117 12:54:58.701"/>
+</suite>
+<statistics>
+<total>
+<stat fail="8" skip="0" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="8" skip="0" id="s1" name="Login Tests" pass="0">Login Tests</stat>
+<stat fail="1" skip="0" id="s1-s1" name="Gherkin Login" pass="0">Login Tests.Gherkin Login</stat>
+<stat fail="6" skip="0" id="s1-s2" name="Invalid Login" pass="0">Login Tests.Invalid Login</stat>
+<stat fail="1" skip="0" id="s1-s3" name="Valid Login" pass="0">Login Tests.Valid Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
